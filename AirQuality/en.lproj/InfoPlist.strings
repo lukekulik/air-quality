@@ -1,0 +1,4 @@
+/* Display name and description for this extension. */
+"CFBundleDisplayName" = "AirQuality";
+"com.apple.notificationcenter.widget.description" = "";
+
