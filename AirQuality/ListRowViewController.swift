@@ -9,7 +9,7 @@
 import Cocoa
 
 var safety=""
-var city = "Katowice"
+var city = "Boston"
 var time2 = "--:--"
 var acqScore2 = "1"
 class ListRowViewController: NSViewController {

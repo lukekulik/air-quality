@@ -148,7 +148,7 @@ class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListView
                     let dateX = NSDate(timeIntervalSince1970: Double(swiftyJSONObject[0]["utime"].description)!)
                     let formatter = DateFormatter()
 //                    formatter.timeStyle = .ShortStyle
-                    formatter.dateStyle = .medium
+                    formatter.dateStyle = .none
                     formatter.timeStyle = .short
                     print(dateX)
                     time2 = formatter.string(from: dateX as Date)

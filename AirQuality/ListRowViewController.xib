@@ -31,7 +31,7 @@
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56G-za-gD7">
-                    <rect key="frame" x="-2" y="2" width="87" height="17"/>
+                    <rect key="frame" x="-2" y="1" width="87" height="17"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="83" id="5tL-Nb-q1W"/>
                     </constraints>
@@ -42,7 +42,7 @@
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QH5-Y4-F8V">
-                    <rect key="frame" x="-2" y="19" width="36" height="14"/>
+                    <rect key="frame" x="-2" y="18" width="36" height="14"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="00:00" id="5u7-wu-wlg">
                         <font key="font" metaFont="smallSystem"/>
                         <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
@@ -50,9 +50,9 @@
                     </textFieldCell>
                 </textField>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLA-rb-9UZ">
-                    <rect key="frame" x="168" y="-3" width="34" height="41"/>
+                    <rect key="frame" x="164" y="-6" width="38" height="48"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="😊" id="0HX-Tt-UmD">
-                        <font key="font" size="25" name="AppleColorEmoji"/>
+                        <font key="font" size="30" name="AppleColorEmoji"/>
                         <color key="textColor" name="controlDarkShadowColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
