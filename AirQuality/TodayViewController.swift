@@ -6,7 +6,6 @@ import Cocoa
 import NotificationCenter
 import CoreLocation
 import Alamofire
-//import SwiftyJSON
 
 // FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
 // Consider refactoring the code to use the non-optional operators.
@@ -34,7 +33,6 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 
 
 //var minimumVisibleRowCount: Int = 3
-//git test
 
 class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListViewDelegate, NCWidgetSearchViewDelegate, CLLocationManagerDelegate{
     
@@ -60,9 +58,9 @@ class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListView
         super.viewDidLoad()
         NSLog("viewDidLoad initialized")
         
-        self.updateLocation()
-        locationManager.stopUpdatingLocation() // Stop Location Manager - keep here to run just once
-        NSLog((locationManager.location!.coordinate.latitude).description)
+//        self.updateLocation()
+//        locationManager.stopUpdatingLocation() // Stop Location Manager - keep here to run just once
+//        NSLog((locationManager.location!.coordinate.latitude).description)
         
         ////
         ////        LatitudeGPS = String(format: "%.6f", manager.location!.coordinate.latitude)
@@ -86,6 +84,7 @@ class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListView
         
         widgetPerformUpdate(completionHandler: { (error) -> () in // pointless string
 //            if 1 == 1 {
+                NSLog("Updating in widgetUpdate")
             
                 self.updateData()
                 let row =  ["1"]//,"2"]
@@ -149,7 +148,10 @@ class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListView
                     let dateX = NSDate(timeIntervalSince1970: Double(swiftyJSONObject[0]["utime"].description)!)
                     let formatter = DateFormatter()
 //                    formatter.timeStyle = .ShortStyle
-                    time2 = formatter.stringFromDate(dateX)
+                    formatter.dateStyle = .medium
+                    formatter.timeStyle = .short
+                    print(dateX)
+                    time2 = formatter.string(from: dateX as Date)
                     completion(noError)
                 }
                 else {
@@ -189,11 +191,11 @@ class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListView
         
         if score>500
         {
-            safety="🚨"
+            safety="🚨"         //🇨🇳 china bad
+
         }
     
         acqScore2 = self.acqScore_local
-        //🇨🇳 china bad
         
         NSLog("Data Updated from \(oldVal) to \(self.acqScore_local)") //this is wrong
 
@@ -273,7 +275,6 @@ class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListView
             self.searchController = nil
         }
     }
-    
     func widgetMarginInsets(forProposedMarginInsets defaultMarginInset: EdgeInsets) -> EdgeInsets {
         // Override the left margin so that the list view is flush with the edge.
         var newInsets = defaultMarginInset
@@ -284,7 +285,7 @@ class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListView
     var widgetAllowsEditing: Bool {
         // Return true to indicate that the widget supports editing of content and
         // that the list view should be allowed to enter an edit mode.
-        return false
+        return true
     }
     
     func widgetDidBeginEditing() {
@@ -312,18 +313,19 @@ class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListView
     func widgetListPerformAddAction(_ list: NCWidgetListViewController) {
         // The user has clicked the add button in the list view.
         // Display a search controller for adding new content to the widget.
-        self.searchController = NCWidgetSearchViewController()
-        self.searchController!.delegate = self
+        let searchController = NCWidgetSearchViewController()
+        self.searchController = searchController
+        searchController.delegate = self
         
         // Present the search view controller with an animation.
         // Implement dismissViewController to observe when the view controller
         // has been dismissed and is no longer needed.
-        self.present(inWidget: self.searchController!)
+        self.present(inWidget: searchController)
     }
     
     func widgetList(_ list: NCWidgetListViewController, shouldReorderRow row: Int) -> Bool {
         // Return true to allow the item to be reordered in the list by the user.
-        return false
+        return true
     }
     
     func widgetList(_ list: NCWidgetListViewController, didReorderRow row: Int, toRow newIndex: Int) {
@@ -332,7 +334,7 @@ class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListView
     
     func widgetList(_ list: NCWidgetListViewController, shouldRemoveRow row: Int) -> Bool {
         // Return true to allow the item to be removed from the list by the user.
-        return false
+        return true
     }
     
     func widgetList(_ list: NCWidgetListViewController, didRemoveRow row: Int) {
@@ -354,7 +356,5 @@ class TodayViewController: NSViewController, NCWidgetProviding, NCWidgetListView
     func widgetSearch(_ searchController: NCWidgetSearchViewController, resultSelected object: Any) {
         // The user has selected a search result from the list.
     }
-    
-
     
 }

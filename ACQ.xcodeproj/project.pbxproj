@@ -12,11 +12,13 @@
 		0B009D7A1C0831AC003EE671 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B009D791C0831AC003EE671 /* Assets.xcassets */; };
 		0B009D7D1C0831AC003EE671 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B009D7B1C0831AC003EE671 /* Main.storyboard */; };
 		0B31FCC11CF182E000D7B7E6 /* ListRowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B31FCC01CF182E000D7B7E6 /* ListRowViewController.xib */; };
+		0B3326211FE9B7BA00F981AB /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3326201FE9B7BA00F981AB /* SwiftyJSON.swift */; };
+		0B3326221FE9B7BA00F981AB /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3326201FE9B7BA00F981AB /* SwiftyJSON.swift */; };
+		0B3326941FE9C2D700F981AB /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3326921FE9C2D700F981AB /* TodayViewController.xib */; };
+		0B3326951FE9C2D700F981AB /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B3326921FE9C2D700F981AB /* TodayViewController.xib */; };
 		0BC37B7C1FE9AAF2009D0AEB /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC37B731FE9AA68009D0AEB /* Alamofire.framework */; };
 		0BC37B7D1FE9AAF2009D0AEB /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC37B731FE9AA68009D0AEB /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0BEBDB201FE9B138006152C2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC37B6F1FE9AA68009D0AEB /* Alamofire.framework */; };
-		0BEBDB221FE9B21B006152C2 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEBDB211FE9B21B006152C2 /* SwiftyJSON.swift */; };
-		0BEBDB231FE9B21B006152C2 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEBDB211FE9B21B006152C2 /* SwiftyJSON.swift */; };
 		0BFD1D881C0834EB00079AF8 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B009D8A1C0831CA003EE671 /* NotificationCenter.framework */; };
 		0BFD1D8D1C0834EB00079AF8 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD1D8C1C0834EB00079AF8 /* TodayViewController.swift */; };
 		0BFD1D8F1C0834EB00079AF8 /* ListRowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD1D8E1C0834EB00079AF8 /* ListRowViewController.swift */; };
@@ -126,8 +128,9 @@
 		0B009D7E1C0831AC003EE671 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B009D8A1C0831CA003EE671 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		0B31FCC01CF182E000D7B7E6 /* ListRowViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListRowViewController.xib; sourceTree = "<group>"; };
+		0B3326201FE9B7BA00F981AB /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = "../Downloads/SwiftyJSON-3.1.4/Source/SwiftyJSON.swift"; sourceTree = "<group>"; };
+		0B3326931FE9C2D700F981AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = ../../Desktop/nbjh/asda/Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
 		0BC37B631FE9AA67009D0AEB /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
-		0BEBDB211FE9B21B006152C2 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = SwiftyJSON/Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		0BFD1D871C0834EB00079AF8 /* AirQuality.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AirQuality.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BFD1D8B1C0834EB00079AF8 /* AirQuality.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AirQuality.entitlements; sourceTree = "<group>"; };
 		0BFD1D8C1C0834EB00079AF8 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -163,7 +166,7 @@
 		0B009D691C0831AC003EE671 = {
 			isa = PBXGroup;
 			children = (
-				0BEBDB211FE9B21B006152C2 /* SwiftyJSON.swift */,
+				0B3326201FE9B7BA00F981AB /* SwiftyJSON.swift */,
 				0BC37B631FE9AA67009D0AEB /* Alamofire.xcodeproj */,
 				0B009D741C0831AC003EE671 /* ACQ */,
 				0BFD1D891C0834EB00079AF8 /* AirQuality */,
@@ -219,6 +222,7 @@
 		0BFD1D891C0834EB00079AF8 /* AirQuality */ = {
 			isa = PBXGroup;
 			children = (
+				0B3326921FE9C2D700F981AB /* TodayViewController.xib */,
 				0BFD1D8C1C0834EB00079AF8 /* TodayViewController.swift */,
 				0BFD1DC21C08384100079AF8 /* TodayViewController.xib */,
 				0BFD1D8E1C0834EB00079AF8 /* ListRowViewController.swift */,
@@ -383,6 +387,7 @@
 			files = (
 				0B009D7A1C0831AC003EE671 /* Assets.xcassets in Resources */,
 				0B009D7D1C0831AC003EE671 /* Main.storyboard in Resources */,
+				0B3326941FE9C2D700F981AB /* TodayViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +395,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B3326951FE9C2D700F981AB /* TodayViewController.xib in Resources */,
 				0B31FCC11CF182E000D7B7E6 /* ListRowViewController.xib in Resources */,
 				0BFD1DC31C08384100079AF8 /* TodayViewController.xib in Resources */,
 				0BFD1D991C0834EB00079AF8 /* InfoPlist.strings in Resources */,
@@ -403,7 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BEBDB221FE9B21B006152C2 /* SwiftyJSON.swift in Sources */,
+				0B3326211FE9B7BA00F981AB /* SwiftyJSON.swift in Sources */,
 				0B009D781C0831AC003EE671 /* ViewController.swift in Sources */,
 				0B009D761C0831AC003EE671 /* AppDelegate.swift in Sources */,
 			);
@@ -413,7 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BEBDB231FE9B21B006152C2 /* SwiftyJSON.swift in Sources */,
+				0B3326221FE9B7BA00F981AB /* SwiftyJSON.swift in Sources */,
 				0BFD1D8D1C0834EB00079AF8 /* TodayViewController.swift in Sources */,
 				0BFD1D8F1C0834EB00079AF8 /* ListRowViewController.swift in Sources */,
 			);
@@ -441,6 +447,14 @@
 				0B009D7C1C0831AC003EE671 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0B3326921FE9C2D700F981AB /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B3326931FE9C2D700F981AB /* Base */,
+			);
+			name = TodayViewController.xib;
 			sourceTree = "<group>";
 		};
 		0BFD1D971C0834EB00079AF8 /* InfoPlist.strings */ = {
